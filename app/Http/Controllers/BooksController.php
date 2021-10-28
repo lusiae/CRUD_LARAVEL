@@ -64,9 +64,10 @@ class BooksController extends Controller
      */
     public function edit($id)
     {
-        // contoh
+        //
         $books = Book::find($id);
         return view('edit', ['book' => $books]);
+
     }
 
     /**
